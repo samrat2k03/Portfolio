@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,17 +51,17 @@
         <img src="./assets/java-script.png" alt="js" />
         <h3 class="child_skills">JavaScript</h3>
       </div>
+      <div class="reactSection">
+        <img src="./assets/react-2.svg" alt="react" />
+        <h3 class="child_skills">React + Vite</h3>
+      </div>
       <div class="pySection">
         <img src="./assets/python.png" alt="py" />
         <h3 class="child_skills">Python</h3>
       </div>
-      <div class="reactSection">
-        <img src="./assets/react.png" alt="react" />
-        <h3 class="child_skills">React + Vite</h3>
-      </div>
-      <div class="databaseSection">
-        <img src="./assets/database-storage.png" alt="bd">
-        <h3 class="child_skills">Backend Developer</h3>
+      <div class="tensorflow">
+        <img src="./assets/tensorflow-seeklogo.com.svg" alt="tensorflow">
+        <h3 class="child_skills">TensorFlow</h3>
       </div>
       <div class="aiSection">
         <img src="./assets/ai.png" alt="ai" />
@@ -100,126 +101,184 @@
       </div>
     </div>
     <div class="achievements" id="achievements">
-      <h2 id="achievements_title">Achievements</h2>
-      <h3>
-        Responsive Web Design @FreeCodeCamp.org |
-        <span>
-          <a href="https://www.freecodecamp.org/certification/fcc4dec29fc-59c5-491d-918b-985ed593b9b1/responsive-web-design"
-            target="_blank">
-            View
-          </a>
-        </span>
-      </h3>
-      <h3>
-        JavaScript Algorithms and Data Structures @FreeCodeCamp.org |
-        <span>
-          <a href="https://www.freecodecamp.org/certification/fcc4dec29fc-59c5-491d-918b-985ed593b9b1/javascript-algorithms-and-data-structures"
-            target="_blank">
-            View
-          </a>
-        </span>
-      </h3>
-      <h3>
-        Data Analysis with Python @FreeCodeCamp.org |
-        <span>
-          <a href="https://www.freecodecamp.org/certification/fcc4dec29fc-59c5-491d-918b-985ed593b9b1/data-analysis-with-python-v7"
-            target="_blank">
-            View
-          </a>
-        </span>
-      </h3>
-      <h3>
-        JavaScript @GUVI |
-        <span>
-          <a href="https://www.guvi.in/verify-certificate?id=NM9073P62f64v14j84" target="_blank">
-            View
-          </a>
-        </span>
-      </h3>
-      <h3>
-        MongoDB Essentials - A Complete MongoDB Guide @Infosys | SpringBoard | <span><a href="">View</a></span>
-      </h3>
+      <div class="achievements-content">
+        <h2 id="achievements_title">Achievements</h2>
+        <h3>
+          Responsive Web Design @FreeCodeCamp.org |
+          <span>
+            <a href="https://www.freecodecamp.org/certification/fcc4dec29fc-59c5-491d-918b-985ed593b9b1/responsive-web-design"
+              target="_blank">
+              View
+            </a>
+          </span>
+        </h3>
+        <h3>
+          JavaScript Algorithms and Data Structures @FreeCodeCamp.org |
+          <span>
+            <a href="https://www.freecodecamp.org/certification/fcc4dec29fc-59c5-491d-918b-985ed593b9b1/javascript-algorithms-and-data-structures"
+              target="_blank">
+              View
+            </a>
+          </span>
+        </h3>
+        <h3>
+          Data Analysis with Python @FreeCodeCamp.org |
+          <span>
+            <a href="https://www.freecodecamp.org/certification/fcc4dec29fc-59c5-491d-918b-985ed593b9b1/data-analysis-with-python-v7"
+              target="_blank">
+              View
+            </a>
+          </span>
+        </h3>
+        <h3>
+          JavaScript @GUVI |
+          <span>
+            <a href="https://www.guvi.in/verify-certificate?id=NM9073P62f64v14j84" target="_blank">
+              View
+            </a>
+          </span>
+        </h3>
+        <h3>
+          MongoDB Essentials - A Complete MongoDB Guide @Infosys | SpringBoard | <span><a href="">View</a></span>
+        </h3>
+      </div>
+      <div class="image">
+        <img src="./assets/trophy.png" alt="">
+      </div>
     </div>
+    <div class="project_showCase">
+      <div class="titleOfProjectShowCase">
+        <h2>
+          Certificates
+        </h2>
+      </div>
+      <div class="certificates_list">
+        <img class="c" src="./achievement/Responsive Web Design Certificate/Responsive Web Design Certificate.jpg"
+          alt="responsive Certificate">
+        <img class="c" src="./achievement/JavaScript Certificate/JavaScript Certificate.jpg" alt="jsCertificate">
+        <img class="c"
+          src="./achievement//Data Analytics FreeCodeCamp Certificate/Data Analytics FreeCodeCamp Certificate.jpg"
+          alt="data-analysis-with-python-v7">
+        <img class="c" src="./achievement/GuviCertification - NM9073P62f64v14j84.png" alt="guvi_js">
+        <img class="c"
+          src="./achievement/1-c67f6eba-0e11-4c3e-bc27-fde23622a9fb/1-c67f6eba-0e11-4c3e-bc27-fde23622a9fb.jpg"
+          alt="mongodbCertificate">
+      </div>
+    </div>
+    <div class="topOfTheProject">
+      <h2 id="pt">My Latest Projects</h2>
+    </div>  
     <div class="projects" id="projects">
-      <h2 id="pt">Projects</h2>
       <div class="project1">
         <h4>
-          Uncovering the Hidden Treasures of the Mushroom Kingdom: A
-          Classification Analysis
+          Mushroom Classification using Artificial Intelligence
         </h4>
-        <ul>
-          <li> This project classifies various types of mushrooms found worldwide using deep learning (DL) techniques in
-            artificial intelligence (AI).</li>
-          <li> The mushrooms are categorized as Boletus, Lactarius, and Russula.</li>
-          <li> Using Transfer learning, specifically using Inception V3 enhances the accuracy of mushroom classification
-            based on visual characteristics.</li>
-          <li>Simply you can upload a mushroom image, the trained machine learning model classifies and gives the name
-            of that Mushroom</li>
-          <li> Created user interface with <b> HTML CSS JavaScript</b> and with <b>Flask(python)</b> as Server and
-            deployed in <b>IBM Cloud , IBM Watson Studio</b></li>
-        </ul>
-        <button id="p1">
+        <img id="mushroom" src="./assets/mushroom.jpg" alt="mushroom">
+        <div class="descp">
+         <p>Built with HTML, CSS, JavaScript, Flask, TensorFlow,<br> and Inception V3.</p>
+         <p>Deployed on IBM Watson Studio.</p>
+        </div>
+        <div class="btn_Projects">
+        <button class="cssbuttons-io">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path>
+          </svg>
           <a href="https://github.com/naanmudhalvan-SI/PBL-NT-GP-14794-1682843285.git">Source Code</a>
+           </span>
         </button>
-        <button>
+        <button class="button-31">
           <a href="https://github.com/naanmudhalvan-SI/PBL-NT-GP-14794-1682843285.git">
             view
           </a>
         </button>
       </div>
-    </div>
+      </div>
     <div class="project2">
       <h4>Student Hub</h4>
-      <ul>
-        <li>Student Hub is advanced version of Student Information System</li>
-        <li>Student Hub provides centralized platform for managing and storing student-related data, including personal
-          information.</li>
-        <li>It reduces more physical work and paperwork, saves time and effort, eliminates the possibility of errors
-          caused by manual data </li>
-        <li>it facilitates communication and collaboration among students.</li>
-        <li>Features include chat with friends, group discussions, multimedia file sharing, and self-registration and
-          management of student profiles.</li>
-        <li>Students can access profiles of other students and connecteasily.</li>
-        <li> with others in their department through separate chat rooms & Public discussion section The Student Hub is
-          user-friendly and accessible</li>
-      </ul>
-      <button id="p2">
-        <a href="https://github.com/samrat2k03/V2---Student-Hub.git">Source Code</a>
-      </button>
-      <button>
+      <img src="./assets/3156814.jpg" id="stuhub" alt="students">
+      <div class="descp">
+      <p>Student Hub: Centralized platform for student data  <br>management and collaboration.</p>
+      <p> Built with ReactJS, Firebase, and EmailJS.</p>
+    </div>
+    <div class="btn_Projects">
+    <button class="cssbuttons-io">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path>
+      </svg>
+      <a href="https://github.com/samrat2k03/V2---Student-Hub.git">Source Code</a>
+       </span>
+    </button>
+        <button class="button-31">
         <a href="https://student-hub-1.web.app/">
           view
         </a>
       </button>
     </div>
   </div>
+    <div class="project3">
+      <h4>Advanced Todo List</h4>
+      <img src="./assets/todo.jpg" id="todolist" alt="todolist">
+      <div class="descp">
+      <p>Advanced TodoList Web application</p>
+      <p>Built with HTML, CSS, JavaScript, FireBase Hosting</p>
+    </div>
+    <div class="btn_Projects">
+      <button class="cssbuttons-io">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path>
+        </svg>
+        <a href="https://github.com/samrat2k03/Todo-List-App.git">Source Code</a>
+         </span>
+      </button>
+        <button class="button-31">
+        <a href="https://todo-app-samrat.web.app/">
+          view
+        </a>
+      </button>
+    </div>
+    </div>
+  </div>
+  <div class="future">
+    <p>
+      <q>
+        I will be undertaking and releasing numerous projects in the coming days.
+      </q>
+    </p>
+  </div>
+</div>
   <div class="whitebox">
-    <div class="connections">
+    <div class="connections" id="contact">
       <h3><strong>Let's Connect</strong></h3><br>
       <p>Feel free to connect with me on different social media platforms:</p>
-        <div class="sm">
-          <img src="./assets/github.png" alt="git">
-            <a href="https://github.com/samrat2k03" target="_blank">samrat2k03</a>
-        </div>
-        <div class="sm">
-          <img src="./assets/instagram.png" alt="instagram">
-            <a href="https://www.instagram.com/the.samrat28/" target="_blank">the.samrat28</a>
-        </div>
-        <div class="sm">
-          <img src="./assets/linkedin.png" alt="linkedin">
-            <a href="https://www.linkedin.com/in/samrat-d-a79817278" target="_blank">Samrat D</a>
-        </div>
-        <div class="sm">
-          <img src="./assets/twitter.png" alt="twitter">
-             <a href="https://twitter.com/samratapr28" target="_blank">@samratapr28</a>
-        </div>
+      <div class="sm">
+        <img src="./assets/github (1).png" alt="git">
+        <a href="https://github.com/samrat2k03" target="_blank">samrat2k03</a>
+      </div>
+      <div class="sm">
+        <img src="./assets/instagram.png" alt="instagram">
+        <a href="https://www.instagram.com/the.samrat28/" target="_blank">the.samrat28</a>
+      </div>
+      <div class="sm">
+        <img src="./assets/linkedin.png" alt="linkedin">
+        <a href="https://www.linkedin.com/in/samrat-d-a79817278" target="_blank">Samrat D</a>
+      </div>
+      <div class="sm">
+        <img src="./assets/twitter.png" alt="twitter">
+        <a href="https://twitter.com/samratapr28" target="_blank">@samratapr28</a>
+      </div>
+      <div class="sm">
+        <img src="./assets/gmail.png" alt="gmail">
+        <a href="mailto:samratapr40@gmail.com" target="_blank">samratapr40@gmail.com</a>
+      </div>
     </div>
   </div>
   </div>
-  <div class="footer" id="contact">
-    <p>Contact : samratapr40@gmail.com</p>
-    <p>|</p>
-    <p>Phone : 9176013065</p>
-  </div>
 </body>
+
 </html>
