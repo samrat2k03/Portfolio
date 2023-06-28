@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(70, 33, 235);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: blue;
+}
+
 *{
     margin: 0;
     padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
 }
 
 body{
@@ -41,6 +62,12 @@ a {
 }
 .rsh3{
     padding-right: 42px;
+}
+.rsh3 a{
+  transition: all 0.3 ease;
+}
+.rsh3 a:hover{
+  color:rgb(94, 94, 248);
 }
 .about{
     height: 540px;
@@ -378,7 +405,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
-
 }
 
 .connections h3,
@@ -394,7 +420,6 @@ a {
   align-items: center;
   margin-top: 15px;
   margin-right: 40px;
-  /* margin-bottom: 20px; */
 }
 
 .sm img {
@@ -455,81 +480,224 @@ a {
 .certificates_list .c:hover {
   transform: scale(1.15);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* responsive */
-@media screen and (max-width: 768px) { 
-  #dev{
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .right_side {
-    /* display: none; */
-    margin-left: 10px;
-    font-size: 10px;
-    /* padding-right: 10px; */
-  }
-  
-  .rsh3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-left: 2px; */
-    padding-right: 8px;
-  }
-  
-  .about {
-    height: auto; 
-    font-size: 20px;
-  }
-  #abbt{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .skills {
-    margin: 30px;
-  }
-  
-  .achievements {
-    padding: 30px;
-  }
-  
-  .projects {
-    padding: 30px;
-  }
-  .whitebox{
-    height: 250px;
-  }
-  .footer{
-    margin-top:0 ;
-  }
+.burger{
+  display: none;
 }
 
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px;
+  /* border: 1px solid salmon; */
+}
+
+
+/* media queries */
+@media screen and (max-width: 768px){
+  .nav #dev{
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .nav .right_side{
+    display: none;
+  }
+  .content .about{
+    font-size: 30px;
+  }
+  .content #abbt{
+    margin-top: 8px;
+    font-size: 20px;
+  }
+  .skills{
+    margin: 65px;
+  }
+  .skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+  }
+  .skills h2#title_skills {
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
+  .achievements {
+    margin: 30px;
+    padding: 19px;
+  }
+  .image{
+    display: none;
+  }
+  .achievements h2#achievements_title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+ .titleOfProjectShowCase h2{
+    font-size: 45px;
+  }
+  .certificates_list .c{
+    width:85%;
+    height: 80%;
+  }
+  .topOfTheProject #pt{
+    color: #fff;
+  }
+  .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+  }
+.project1, 
+.project2,
+.project3 {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  height:580px;
+  width: 500px;
+  margin: 20px;
+}
+
+.project1 img, 
+.project2 img {
+  height: 260px;
+  width: 330px;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+}
+
+.project3 img{
+  height:300px;
+  width: 350px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+.btn_Projects{
+  margin-top: 15px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding:2px;
+}
+.whitebox{
+  height: 280px;
+}
+.connections h3{
+  font-size: 20px;
+}
+.connections p{
+  font-size: 15px;
+}
+.sm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 50px;
+  padding: 10px;
+}
+}
+
+@media screen and (max-width: 480px){
+  .nav #dev{
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  .nav .right_side{
+    display: none;
+  }
+  .background-svg {
+    position: absolute;
+    top: 260px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+  .content .about{
+    margin-top:-120px ;
+    font-size: 25px;
+  }
+  .content #abbt{
+    font-size: 14px;
+  }
+  .skills{
+    margin: 65px;
+  }
+  .skills h2#title_skills {
+    margin-bottom: 20px;
+  }
+  .achievements {
+    margin: 30px;
+    padding: 15px;
+  }
+  .image{
+    display: none;
+  }
+  .achievements h2#achievements_title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+ .titleOfProjectShowCase h2{
+    font-size: 40px;
+  }
+  .certificates_list .c{
+    width:90%;
+    height: 88%;
+  }
+  .topOfTheProject #pt{
+    color: #fff;
+  }
+  .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .project1, 
+.project2,
+.project3 {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  height:535px;
+  width: 350px;
+  margin: 20px;
+}
+
+.btn_Projects{
+  margin-top: 10px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding:2px;
+}
+.whitebox{
+  height: 260px;
+}
+.connections h3{
+  font-size: 20px;
+}
+.connections p{
+  font-size: 15px;
+}
+.sm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 50px;
+  padding: 10px;
+}
+}
